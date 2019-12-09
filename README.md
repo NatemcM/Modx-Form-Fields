@@ -33,7 +33,9 @@ Out for the box this extra adds two chunks, `default_email_tpl` and `ff_email_re
 ```
 
 ## How does it work?
-Form Fields comes with a default HTML template and a repeater chunk. When called within a Formit hook, it takes all submitted form data and loops it into the default template. It's that simple. 
+Form Fields comes with a default HTML template and a repeater chunk. When called within a Formit hook, it takes all submitted form data and loops it into the default template. It's that simple.
+
+When naming your inputs, anything separated by a dash '-' will be split and proper cased. This allows you to define fields like first-name, email-address, telephone-number and have them display as First name, Email address & Telephone number in your email.
 
 ## Can I customise Form Fields?
 Yes, Form Fields comes with 5 settings which allow you to change the repeater chunk and define what data you want (or don't want) in your emails.
